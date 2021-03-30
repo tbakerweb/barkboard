@@ -2,6 +2,9 @@
   "name": "puptalker",
   "version": "1.0.0",
   "description": "",
+  "repository": {
+    "url": "https://github.com/tbakerweb/barkboard"
+  },
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
@@ -11,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "aplay": "^1.2.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "onoff": "^5.0.1",
     "rpi-gpio-buttons": "^1.2.0"

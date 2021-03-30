@@ -10,9 +10,10 @@ require('dotenv').config()
 // var soundOutput = new Sound();
 
 // Setup Hardware / Push Button
-if(process.env.ENABLE_GPIO){
-    var Gpio = require('onoff').Gpio; //include onoff to interact with the GPIO
-}
+//if(process.env.ENABLE_GPIO){
+	console.log('GPIO is enabled');
+	var Gpio = require('onoff').Gpio; //include onoff to interact with the GPIO
+//}
 
 // Build API Http Interface using Express
 const express = require('express');
@@ -35,7 +36,7 @@ app.use('/barkboard', barkboardRouter);
 app.listen(3088, () => console.log('Barkboard API Started'));
 
 // Launch the onboard Controller to listen for button presses and sound plaing
-// const barkboardControllerJs = path.join(__dirname, 'barkboardController.js');
-// const barkboard = spawn('node', [barkboardControllerJs]);
+const barkboardControllerJs = path.join(__dirname, 'barkboardController.js');
+const barkboard = spawn('node', [barkboardControllerJs]);
 
 console.log('running');

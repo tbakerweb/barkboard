@@ -1,7 +1,7 @@
 
 require('dotenv').config()
 
-if (process.env.ENABLE_GPIO) {
+//if (process.env.ENABLE_GPIO) {
 
 	// Console Log 
 	console.log('GPIO is enabled, button presses will raise events.')
@@ -107,7 +107,7 @@ if (process.env.ENABLE_GPIO) {
 
 	});
 
-}
+//}
 
 
 function playSound(sound) {

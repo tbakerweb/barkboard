@@ -11,8 +11,8 @@ require('dotenv').config()
 
 // Setup Hardware / Push Button
 //if(process.env.ENABLE_GPIO){
-	console.log('GPIO is enabled');
-	var Gpio = require('onoff').Gpio; //include onoff to interact with the GPIO
+console.log('GPIO is enabled');
+var Gpio = require('onoff').Gpio; //include onoff to interact with the GPIO
 //}
 
 // Build API Http Interface using Express
